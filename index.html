@@ -1,65 +1,83 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>主な要素</title>
-   </head>
-    <bodyj>
-        <h1>ただのHTML練習</h1>
-        <h2>このサイトを見ても時間の無駄です</h2>
 
-        <p>
-          これはパラグラフです。文節を記述するためのタグです。
-          一部分だけをマーキングする場合は<span>スパン</span>を使用します。
-        </p>
+<head>
+	<title>主な要素</title>
+	<script>
+		function calc() {
+			var w = document.getElementById("weight").value;
+			var h = document.getElementById("height").value;
+			var r = w / (h * w); //BMI指数=体重(kg) / (身長(m) * 身長(m))
+			document.getElementById("result").textContent = "あなたのBMIは" + r + "です。";
+		}
 
-        <h3>番号付きリストの例</h3>
-        <ol>
-            <li>野菜を切る</li>
-            <li>材料を炒める</li>
-            <li>盛り付ける</li>
-        </ol>
+	</script>
+</head>
 
-        <h3>箇条書きの例</h3>
-        <ul>
-            <li>HTMLの基本</li>
-            <li>スタイルの基本</li>
-            <li>スクリプトの基本</li>
-        </ul>
+<body>
+	<h1>ただのHTML練習</h1>
+	<h2>このサイトを見ても時間の無駄です</h2>
 
-        <button>OKボタン</button>
-        <button>NGボタン</button>
+	<p>
+		これはパラグラフです。文節を記述するためのタグです。 一部分だけをマーキングする場合は
+		<span>スパン</span>を使用します。
+	</p>
 
-   		<table border="1">
-   			<tr>
-        <td></td>
-				<td>月</td>
-				<td>火</td>
-				<td>水</td>
-				<td>木</td>
-				<td>金</td>
-				<td>土</td>
-				<td>日</td>
-   			</tr>
-   			<tr>
-   				<td>午前</td>
-   				<td>理</td>
-   				<td>国</td>
-   				<td>算</td>
-   				<td>英</td>
-   				<td>社</td>
-   			</tr>
-   			<tr>
-   				<td>午後</td>
-   				<td>英</td>
-   				<td>国</td>
-   				<td>理</td>
-   				<td>算</td>
-   				<td>社</td>
-   			</tr>
-       </table>
+	<h3>番号付きリストの例</h3>
+	<ol>
+		<li>野菜を切る</li>
+		<li>材料を炒める</li>
+		<li>盛り付ける</li>
+	</ol>
 
-       <a href="http://www.yahoo.co.jp">Yahooへ</a>
+	<h3>箇条書きの例</h3>
+	<ul>
+		<li>HTMLの基本</li>
+		<li>スタイルの基本</li>
+		<li>スクリプトの基本</li>
+	</ul>
 
-       <img src="Lena512.jpg">
-       </body>
+	<button>OKボタン</button>
+	<button>NGボタン</button>
+
+	<table border="1">
+		<tr>
+			<td></td>
+			<td>月</td>
+			<td>火</td>
+			<td>水</td>
+			<td>木</td>
+			<td>金</td>
+			<td>土</td>
+			<td>日</td>
+		</tr>
+		<tr>
+			<td>午前</td>
+			<td>理</td>
+			<td>国</td>
+			<td>算</td>
+			<td>英</td>
+			<td>社</td>
+		</tr>
+		<tr>
+			<td>午後</td>
+			<td>英</td>
+			<td>国</td>
+			<td>理</td>
+			<td>算</td>
+			<td>社</td>
+		</tr>
+	</table>
+
+	<a href="http://www.yahoo.co.jp">Yahooへ</a>
+	
+	<img src="Lena512.jpg">
+	
+	<h1>BMIの計算</h1>
+	体重(kg) : <input id="weight"/><br />
+	身長(m) : <input id="height"/><br />
+	計算:<button onclick="calc()">計算</button>
+	<p id="result"></p>
+</body>
+
 </html>

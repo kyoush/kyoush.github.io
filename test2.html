@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Windowsのここがゴミ</title>
+		<link rel="stylesheet"href="theme.css">
+		<script>
+		function dispText(){
+
+			var name  = document.fm.input_name.value;
+			alert('入力した名前は' + name + 'です' );
+
+		}
+		</script>
+	</head>
+	<body>
+		<h1>Windowsのここがゴミ</h1>
+		<ul>
+            <li>システムのフォルダ名"Program Files"にスペースが使われている</li>
+		</ul>
+
+	<form name="fm">
+	<input type="text" name="input_name">
+	<input type="button" value="送信" onclick="dispText()">
+	</form>
+	</body>
+</html>

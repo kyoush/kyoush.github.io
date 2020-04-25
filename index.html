@@ -27,58 +27,80 @@
   </script>
 </head>
 <body>
-  只今の時刻<span id="myspan"></span>
-  <ul>
-    <li><p><a href="word.html">Wordの編集時間の変更方法</a></p></li>
-    <li><p><a href="binary.html">バイナリファイル</a></p></li>
-    <li><p><a href="color.html">カラー</a></p></li>
-    <li><p><a href="emacs.html">Emacsで文字化けしたときの対処方法</a></p></li>
-    <li><p><a href="windows.html">Windowsのここがゴミ</a></p></li>
-    <li><p><a href="usb.html">Etherを用いてOS書き込みディスクを作った後、元の使えるUSBドライブに戻す方法</a></p></li>
-  </ul>
-　
-  <br>
-  <h3>BMIの計算</h3>
-  <p>
-	身長(cm) : <input id="height"/><br>
-	体重(kg) : <input id="weight"/><br>
-	計算:<button type="button" onclick="calc()">計算</button>
-	<p id="result"></p><br>
+	<div id="site-title">
+		MyBlog
+	</div>
+	<br>
+	<div class="container">
+		<main class="main">
+		只今の時刻<span id="myspan"></span>
+		<ul>
+			<li><p><a href="word.html">Wordの編集時間の変更方法</a></p></li>
+			<li><p><a href="binary.html">バイナリファイル</a></p></li>
+			<li><p><a href="color.html">カラー</a></p></li>
+			<li><p><a href="emacs.html">Emacsで文字化けしたときの対処方法</a></p></li>
+			<li><p><a href="windows.html">Windowsのここがゴミ</a></p></li>
+			<li><p><a href="usb.html">Etherを用いてOS書き込みディスクを作った後、元の使えるUSBドライブに戻す方法</a></p></li>
+		</ul>
+		　
+		<br>
+		<h3>BMIの計算</h3>
+		<p>
+			身長(cm) : <input id="height"/><br>
+			体重(kg) : <input id="weight"/><br>
+			計算:<button type="button" onclick="calc()">計算</button>
+			<p id="result"></p><br>
 
-	<table border="1">
-		<tr>
-			<td>BMI</td>
-			<td>判定</td>
-		</tr>
-		<tr>
-			<td>≧25 ~ 30 ＞</td>
-			<td>肥満1度</td>
-		</tr>
-		<tr>
-			<td>≧30 ~ 35 ＞</td>
-			<td>肥満2度</td>
-		</tr>
-		<tr>
-			<td>≧35 ~ 40 ＞</td>
-			<td>肥満3度</td>
-		</tr>
-		<tr>
-			<td>≧40</td>
-			<td>肥満4度</td>
-		</tr>
-		<tr>
-			<td>≧18.5 ~ 25 ＞</td>
-			<td>普通体重</td>
-		</tr>
-		<tr>
-			<td>＜18.5</td>
-			<td>低体重</td>
-		</tr>
-	</table>
-	<hr>
-	<p>
-		Last modified: <time>2020-4-25</time>
-	</p>
+			<table border="1">
+				<tr>
+					<td>BMI</td>
+					<td>判定</td>
+				</tr>
+				<tr>
+					<td>≧25 ~ 30 ＞</td>
+					<td>肥満1度</td>
+				</tr>
+				<tr>
+					<td>≧30 ~ 35 ＞</td>
+					<td>肥満2度</td>
+				</tr>
+				<tr>
+					<td>≧35 ~ 40 ＞</td>
+					<td>肥満3度</td>
+				</tr>
+				<tr>
+					<td>≧40</td>
+					<td>肥満4度</td>
+				</tr>
+				<tr>
+					<td>≧18.5 ~ 25 ＞</td>
+					<td>普通体重</td>
+				</tr>
+				<tr>
+					<td>＜18.5</td>
+					<td>低体重</td>
+				</tr>
+			</table>
+			<br>
+			<div class="left-column">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7477985333035!2d139.74324421543233!3d35.65858483882068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd9009ec09%3A0x481a93f0d2a409dd!2z5p2x5Lqs44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1587831425321!5m2!1sja!2sjp" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+			<br>
+			<div class="right-column">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/zYAguZw9D9o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<hr>
+			<p>
+				Last modified: <time>2020-4-26</time>
+			</p>
+		</main>
+		<div class="sidebar">
+			<div class="sidebar-item">
+				<iframe src="https://calendar.google.com/calendar/embed?height=300&amp;wkst=1&amp;bgcolor=%23039BE5&amp;ctz=Asia%2FTokyo&amp;src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%237CB342&amp;showTitle=0&amp;showNav=1&amp;showTz=0&amp;showCalendars=0&amp;showTabs=0&amp;showPrint=0" style="border-width:0" width="250" height="300" frameborder="0" scrolling="yes"></iframe>
+				<a class="twitter-timeline" data-lang="ja" data-width="300" data-height="400" data-theme="dark" href="https://twitter.com/25Op?ref_src=twsrc%5Etfw">Tweets by 25Op</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+		</div>
+	</div>
 </p>
 </body>
 </html>

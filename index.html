@@ -1,11 +1,25 @@
 <!doctype html>
 <html>
 <head>
-  <title>Windowsのここがゴミ</title>
+  <title></title>
   <link rel="stylesheet"href="theme.css">
+  <script>
+    function foo(x) { return (x < 10) ? '0' + x : x;}
+    function clock() {
+      var now = new Date();
+      var h = now.getHours();
+      var m = now.getMinutes();
+      var s = now.getSeconds();
+      var t = foo(h) + ':' + foo(m) + ':' + foo(s);
+      document.getElementById('myspan').
+      textContent = t;
+    }
+    setInterval(clock, 1000);
+    window.onload = clock;
+  </script>
 </head>
 <body>
-  <!-- <p><a href="comu.html">コミュニケーションに関する考察</a></p> -->
+  只今の時刻<span id="myspan"></span>
   <ul>
     <li><p><a href="word.html">Wordの編集時間の変更方法</a></p></li>
     <li><p><a href="binary.html">バイナリファイル</a></p></li>

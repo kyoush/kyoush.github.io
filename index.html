@@ -16,6 +16,14 @@
     }
     setInterval(clock, 1000);
     window.onload = clock;
+	function calc() {
+		var w = document.getElementById("weight").value;
+		var h = document.getElementById("height").value;
+		h = h * 0.01;
+		var r = w / (h * h); //BMI指数=体重(kg) / (身長(m) * 身長(m))
+		r = Math.round(r * 100)
+		document.getElementById("result").textContent = "あなたのBMIは" + r / 100 + "です。";
+	}
   </script>
 </head>
 <body>
@@ -28,5 +36,45 @@
     <li><p><a href="windows.html">Windowsのここがゴミ</a></p></li>
     <li><p><a href="usb.html">Etherを用いてOS書き込みディスクを作った後、元の使えるUSBドライブに戻す方法</a></p></li>
   </ul>
+　
+  <br>
+  <h3>BMIの計算</h3>
+  <p>
+	身長(cm) : <input id="height"/><br>
+	体重(kg) : <input id="weight"/><br>
+	計算:<button type="button" onclick="calc()">計算</button>
+	<p id="result"></p><br>
+
+	<table border="1">
+		<tr>
+			<td>BMI</td>
+			<td>判定</td>
+		</tr>
+		<tr>
+			<td>≧25 ~ 30 ＞</td>
+			<td>肥満1度</td>
+		</tr>
+		<tr>
+			<td>≧30 ~ 35 ＞</td>
+			<td>肥満2度</td>
+		</tr>
+		<tr>
+			<td>≧35 ~ 40 ＞</td>
+			<td>肥満3度</td>
+		</tr>
+		<tr>
+			<td>≧40</td>
+			<td>肥満4度</td>
+		</tr>
+		<tr>
+			<td>≧18.5 ~ 25 ＞</td>
+			<td>普通体重</td>
+		</tr>
+		<tr>
+			<td>＜18.5</td>
+			<td>低体重</td>
+		</tr>
+	</table>
+</p>
 </body>
 </html>

@@ -1,0 +1,27 @@
+*{
+    background-color: #FFFFDD;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: "しっぽり明朝 流"
+}
+
+h1{
+    color:white;
+    background-color: #00AA00;
+    font-size: 40px;
+}
+
+p{
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+ul, ol{
+    font-size: 20px;
+    margin-right: 0px;
+}
+
+code {
+    background-color: #f3f4f4;
+    font-family: "Inconsolata"
+}

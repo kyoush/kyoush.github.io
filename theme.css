@@ -7,6 +7,23 @@
 
 body{
     margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.site-header{
+    background: brown;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.site-footer{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 70%;
 }
 
 #site-title{
@@ -16,9 +33,9 @@ body{
     font-family: sans-serif;
 }
 
-
 .container {
     width: 100%;
+    padding: 100px 0 70px 0px;
     display: -webkit-flex;
     display: flex;
 }
@@ -26,7 +43,7 @@ body{
 .main{
     display: block;
     width: 800;
-    margin-right: 20px;    
+    margin-right: 20px;
 }
 
 .sidebar {
@@ -36,7 +53,7 @@ body{
 .sidebar-item{
     position: sticky;
     margin-bottom: 0;
-    top: 10px;
+    top: 120px;
     z-index: 1;
 }
 

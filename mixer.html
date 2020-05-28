@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>ステレオミキサー</title>
+    <link rel="stylesheet"href="theme.css">
+    <script>
+        function foo(x) { return (x < 10) ? '0' + x : x}
+        function clock() {
+            var now = new Date();
+            var h = now.getHours();
+            var m = now.getMinutes();
+            var s = now.getSeconds();
+            t = foo(h) + ':' + foo(m) + ':' + foo(s);
+            document.getElementById('myspan').textContent = t;
+        }
+        setInterval(clock, 1000);
+        window.onload = clock;
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <div id="site-title">
+            ステレオミキサー
+        </div>
+    </header>
+    <br>
+    <div class="container">
+		<main class="main">
+            只今の時刻<span id="myspan"></span>
+
+            <H1>はじめに</H1>
+            <p>
+                前から作りたかったステレオオーディオミキサーを作ることにした。
+            </p>
+
+            <H1>なぜ作るのか</H1>
+            <p>
+                　スマホで電話をすると音量をマックスにしても音量が小さい。そのため、PCで電話をすればヘッドホンアンプで音量はいくらでも増幅できるし、コンデンサマイクも使えて高品質な通話ができる。そこで、スマホでゲームをしながら通話をするときにスマホのゲームの音とPCの通話の音をミックスしてヘッドホンアンプに入力したいのである。またPCでYouTube見ながらスマホゲーするときも音をミックスしたりしたい。
+                <br>
+                　前からやろうと思っていたKiCadの勉強も兼ねてオーディオミキサーを設計してみることにした
+            </p>
+
+            <H1>KiCadによる回路設計</H1>
+            <p>
+                
+            </p>
+
+            <div class="site-footer">
+                <hr>
+                <p>
+                    Last modified: <time>2020-5-22</time>
+                </p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

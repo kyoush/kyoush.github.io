@@ -1,5 +1,5 @@
 *{
-    background-color: #edef9c;
+    background-color: #9ddcdc;
     font-family: sans-serif;
 }
 
@@ -8,7 +8,7 @@ body{
     padding: 0;
 }
 .site-header{
-    background: #95bfe7;
+    background: #7ec2c2;
     display: flex;
     position: fixed;
     justify-content: space-between;
@@ -24,7 +24,7 @@ body{
 }
 
 #site-title{
-    background-color: #95bfe7;
+    background-color: #7ec2c2;
     width: 100%;
     font-size: 70px;
     font-family: sans-serif;
@@ -56,7 +56,7 @@ body{
 
 h1{
     color:black;
-    background-color: #78bbe6;;
+    background-color: #7ec2c2;
     font-size: 40px;
 }
 

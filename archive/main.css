@@ -58,3 +58,7 @@ img {
         filter: grayscale(0%);
     }
 }
+
+iframe#twitter-widget-0{
+    width:100%;
+}

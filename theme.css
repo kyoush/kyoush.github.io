@@ -39,7 +39,8 @@ body{
 
 .main{
     margin:0 auto;
-    width: 980px;
+/*    width: 980px; */
+    width 520px;
     display: block;
 }
 
@@ -74,4 +75,10 @@ ul, ol{
 code {
     background-color: #f3f4f4;
     font-family: "Inconsolata"
+}
+
+.timeline{
+    max-width: 100% !important;
+    width: 100% !important;
+    box-sizing: border-box;
 }
